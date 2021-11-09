@@ -11,6 +11,9 @@ const register = asyncHandler(async (req, res) => {
 
     if (userExists) {
         res.status(404);
+        res.json({
+          message: "Username already registered, please change the username"
+        })
         throw new Error("Username already registered, please change the username");
     }
     const isAdmin = username.startsWith('adm') ? true : false;
