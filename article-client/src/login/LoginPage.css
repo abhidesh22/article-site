@@ -1,0 +1,14 @@
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .button-new {
+    width: 30%;
+    max-width: 30%;
+  }
+
+  .row-login {
+    margin-right: 75%;
+  }
